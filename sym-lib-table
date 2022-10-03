@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "UltrasoundDriver-rescue")(type "Legacy")(uri "${KIPRJMOD}/UltrasoundDriver-rescue.lib")(options "")(descr ""))
+)

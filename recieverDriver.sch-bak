@@ -1,0 +1,501 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:MC33079 U?
+U 4 1 6314489D
+P 2950 3550
+AR Path="/6314489D" Ref="U?"  Part="4" 
+AR Path="/6310453C/6314489D" Ref="U?"  Part="4" 
+AR Path="/63143E55/6314489D" Ref="U1"  Part="4" 
+F 0 "U1" H 2950 3917 50  0000 C CNN
+F 1 "MC33079" H 2950 3826 50  0000 C CNN
+F 2 "" H 2900 3650 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MC33078-D.PDF" H 3000 3750 50  0001 C CNN
+	4    2950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L UltrasoundDriver-rescue:400ST160-SamacSys_Parts U6
+U 1 1 6314B14F
+P 1300 3450
+F 0 "U6" H 1592 3085 50  0000 C CNN
+F 1 "400ST160" H 1592 3176 50  0000 C CNN
+F 2 "400ST160" H 1950 3550 50  0001 L CNN
+F 3 "" H 1950 3450 50  0001 L CNN
+F 4 "PROWAVE - 400ST160 - Transducer, Transmitter, Ultrasonic, Transmitter" H 1950 3350 50  0001 L CNN "Description"
+F 5 "12.45" H 1950 3250 50  0001 L CNN "Height"
+F 6 "" H 1950 3150 50  0001 L CNN "RS Part Number"
+F 7 "" H 1950 3050 50  0001 L CNN "RS Price/Stock"
+F 8 "PROWAVE" H 1950 2950 50  0001 L CNN "Manufacturer_Name"
+F 9 "400ST160" H 1950 2850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1300 3450
+	-1   0    0    1   
+$EndComp
+Text Notes 750  3650 0    50   ~ 0
+transducer
+$Comp
+L power:GND #PWR024
+U 1 1 63382242
+P 1450 3250
+F 0 "#PWR024" H 1450 3000 50  0001 C CNN
+F 1 "GND" H 1455 3077 50  0000 C CNN
+F 2 "" H 1450 3250 50  0001 C CNN
+F 3 "" H 1450 3250 50  0001 C CNN
+	1    1450 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1300 3350 1450 3350
+Wire Wire Line
+	1450 3350 1450 3250
+$Comp
+L Device:C_Small C10
+U 1 1 63383FE1
+P 1650 3450
+F 0 "C10" V 1421 3450 50  0000 C CNN
+F 1 "10n" V 1512 3450 50  0000 C CNN
+F 2 "" H 1650 3450 50  0001 C CNN
+F 3 "~" H 1650 3450 50  0001 C CNN
+	1    1650 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R11
+U 1 1 633848B0
+P 1900 4050
+F 0 "R11" H 1968 4096 50  0000 L CNN
+F 1 "470" H 1968 4005 50  0000 L CNN
+F 2 "" H 1900 4050 50  0001 C CNN
+F 3 "~" H 1900 4050 50  0001 C CNN
+	1    1900 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 3450 1300 3450
+Wire Wire Line
+	1750 3450 1900 3450
+Wire Wire Line
+	1900 3450 1900 3950
+Wire Wire Line
+	1900 3450 2650 3450
+Connection ~ 1900 3450
+Wire Wire Line
+	2650 3650 2600 3650
+$Comp
+L Device:R_Small_US R12
+U 1 1 63387866
+P 2600 4050
+F 0 "R12" H 2668 4096 50  0000 L CNN
+F 1 "1k" H 2668 4005 50  0000 L CNN
+F 2 "" H 2600 4050 50  0001 C CNN
+F 3 "~" H 2600 4050 50  0001 C CNN
+	1    2600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 6338786C
+P 2600 4150
+F 0 "#PWR027" H 2600 3900 50  0001 C CNN
+F 1 "GND" H 2605 3977 50  0000 C CNN
+F 2 "" H 2600 4150 50  0001 C CNN
+F 3 "" H 2600 4150 50  0001 C CNN
+	1    2600 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3650 2600 3900
+Wire Wire Line
+	2600 3900 2850 3900
+Connection ~ 2600 3900
+Wire Wire Line
+	2600 3900 2600 3950
+$Comp
+L Device:R_Small_US R13
+U 1 1 63389447
+P 2950 3900
+F 0 "R13" V 3018 3946 50  0000 L CNN
+F 1 "390k" V 2850 3850 50  0000 L CNN
+F 2 "" H 2950 3900 50  0001 C CNN
+F 3 "~" H 2950 3900 50  0001 C CNN
+	1    2950 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3050 3900 3250 3900
+Wire Wire Line
+	3250 3900 3250 3550
+Wire Wire Line
+	3250 3550 3450 3550
+Connection ~ 3250 3550
+$Comp
+L Device:R_Small_US R14
+U 1 1 6338AA01
+P 3550 3550
+F 0 "R14" V 3700 3600 50  0000 L CNN
+F 1 "330" V 3618 3505 50  0000 L CNN
+F 2 "" H 3550 3550 50  0001 C CNN
+F 3 "~" H 3550 3550 50  0001 C CNN
+	1    3550 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 6338B3E3
+P 3900 3700
+F 0 "C11" H 3808 3654 50  0000 R CNN
+F 1 "10n" H 3808 3745 50  0000 R CNN
+F 2 "" H 3900 3700 50  0001 C CNN
+F 3 "~" H 3900 3700 50  0001 C CNN
+	1    3900 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 3550 3900 3550
+Wire Wire Line
+	3900 3550 3900 3600
+Wire Wire Line
+	3900 3800 3900 4150
+$Comp
+L power:GND #PWR028
+U 1 1 6338C9B2
+P 3900 4150
+F 0 "#PWR028" H 3900 3900 50  0001 C CNN
+F 1 "GND" H 3905 3977 50  0000 C CNN
+F 2 "" H 3900 4150 50  0001 C CNN
+F 3 "" H 3900 4150 50  0001 C CNN
+	1    3900 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4150 3850 4150
+Wire Wire Line
+	3900 3550 4900 3550
+Connection ~ 3900 3550
+$Comp
+L Device:R_Small_US R15
+U 1 1 6338ED55
+P 4900 4150
+F 0 "R15" H 4968 4196 50  0000 L CNN
+F 1 "10k" H 4968 4105 50  0000 L CNN
+F 2 "" H 4900 4150 50  0001 C CNN
+F 3 "~" H 4900 4150 50  0001 C CNN
+	1    4900 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 6338ED5B
+P 4900 4250
+F 0 "#PWR029" H 4900 4000 50  0001 C CNN
+F 1 "GND" H 4905 4077 50  0000 C CNN
+F 2 "" H 4900 4250 50  0001 C CNN
+F 3 "" H 4900 4250 50  0001 C CNN
+	1    4900 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3750 4900 4000
+Wire Wire Line
+	4900 4000 5150 4000
+Connection ~ 4900 4000
+Wire Wire Line
+	4900 4000 4900 4050
+$Comp
+L SamacSys_Parts:3224W-1-103E VR2
+U 1 1 63371145
+P 5150 4000
+F 0 "VR2" H 5700 4265 50  0000 C CNN
+F 1 "3224W-1-103E" H 5700 4174 50  0000 C CNN
+F 2 "3224W1205E" H 6100 4100 50  0001 L CNN
+F 3 "http://uk.rs-online.com/web/p/products/0177481P" H 6100 4000 50  0001 L CNN
+F 4 "Bourns 3224W Series 12-Turn SMD Cermet Trimmer Resistor with J-Hook Terminations, 10000 +/-10% 0.25W +/-100ppm/C" H 6100 3900 50  0001 L CNN "Description"
+F 5 "5" H 6100 3800 50  0001 L CNN "Height"
+F 6 "0177481P" H 6100 3700 50  0001 L CNN "RS Part Number"
+F 7 "http://uk.rs-online.com/web/p/products/0177481P" H 6100 3600 50  0001 L CNN "RS Price/Stock"
+F 8 "Bourns" H 6100 3500 50  0001 L CNN "Manufacturer_Name"
+F 9 "3224W-1-103E" H 6100 3400 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "70153354" H 6100 3300 50  0001 L CNN "Allied_Number"
+	1    5150 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4000 6250 3650
+$Comp
+L power:GND #PWR030
+U 1 1 6337290D
+P 6250 4250
+F 0 "#PWR030" H 6250 4000 50  0001 C CNN
+F 1 "GND" H 6255 4077 50  0000 C CNN
+F 2 "" H 6250 4250 50  0001 C CNN
+F 3 "" H 6250 4250 50  0001 C CNN
+	1    6250 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4100 6250 4250
+Text Notes 5300 4400 0    50   ~ 0
+10k pot to tune gain\n
+Connection ~ 3900 4150
+$Comp
+L Amplifier_Operational:MC33079 U4
+U 1 1 6337E426
+P 1900 5500
+F 0 "U4" H 1900 5133 50  0000 C CNN
+F 1 "MC33079" H 1900 5224 50  0000 C CNN
+F 2 "" H 1850 5600 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MC33078-D.PDF" H 1950 5700 50  0001 C CNN
+	1    1900 5500
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 63382D6F
+P 1450 5700
+F 0 "#PWR025" H 1450 5450 50  0001 C CNN
+F 1 "GND" H 1455 5527 50  0000 C CNN
+F 2 "" H 1450 5700 50  0001 C CNN
+F 3 "" H 1450 5700 50  0001 C CNN
+	1    1450 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 5700 1450 5600
+Wire Wire Line
+	1450 5600 1600 5600
+$Comp
+L power:-15V #PWR?
+U 1 1 63384A59
+P 1000 5350
+AR Path="/6310453C/63384A59" Ref="#PWR?"  Part="1" 
+AR Path="/63384A59" Ref="#PWR?"  Part="1" 
+AR Path="/63143E55/63384A59" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 1000 5450 50  0001 C CNN
+F 1 "-15V" H 1015 5523 50  0000 C CNN
+F 2 "" H 1000 5350 50  0001 C CNN
+F 3 "" H 1000 5350 50  0001 C CNN
+	1    1000 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R10
+U 1 1 63386D76
+P 1300 5400
+F 0 "R10" V 1095 5400 50  0000 C CNN
+F 1 "10k" V 1186 5400 50  0000 C CNN
+F 2 "" H 1300 5400 50  0001 C CNN
+F 3 "~" H 1300 5400 50  0001 C CNN
+	1    1300 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1600 5400 1500 5400
+Wire Wire Line
+	1200 5400 1000 5400
+Wire Wire Line
+	1000 5400 1000 5350
+$Comp
+L SamacSys_Parts:3224W-1-103E VR1
+U 1 1 633882C2
+P 2100 5050
+F 0 "VR1" H 2650 5315 50  0000 C CNN
+F 1 "3224W-1-103E" H 2650 5224 50  0000 C CNN
+F 2 "3224W1205E" H 3050 5150 50  0001 L CNN
+F 3 "http://uk.rs-online.com/web/p/products/0177481P" H 3050 5050 50  0001 L CNN
+F 4 "Bourns 3224W Series 12-Turn SMD Cermet Trimmer Resistor with J-Hook Terminations, 10000 +/-10% 0.25W +/-100ppm/C" H 3050 4950 50  0001 L CNN "Description"
+F 5 "5" H 3050 4850 50  0001 L CNN "Height"
+F 6 "0177481P" H 3050 4750 50  0001 L CNN "RS Part Number"
+F 7 "http://uk.rs-online.com/web/p/products/0177481P" H 3050 4650 50  0001 L CNN "RS Price/Stock"
+F 8 "Bourns" H 3050 4550 50  0001 L CNN "Manufacturer_Name"
+F 9 "3224W-1-103E" H 3050 4450 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "70153354" H 3050 4350 50  0001 L CNN "Allied_Number"
+	1    2100 5050
+	1    0    0    -1  
+$EndComp
+Text Notes 3000 4800 0    50   ~ 0
+10k pot to tune gain\n
+Wire Wire Line
+	2200 5500 3250 5500
+Wire Wire Line
+	3250 5500 3250 5050
+Wire Wire Line
+	3250 5050 3200 5050
+Wire Wire Line
+	2100 5050 1500 5050
+Wire Wire Line
+	1500 5050 1500 5400
+Connection ~ 1500 5400
+Wire Wire Line
+	1500 5400 1400 5400
+Wire Wire Line
+	3250 5500 3350 5500
+Connection ~ 3250 5500
+Text GLabel 3350 5500 2    50   Output ~ 0
+3.3V
+Text GLabel 7450 3250 1    50   Input ~ 0
+3.3V
+$Comp
+L Device:R_Small_US R16
+U 1 1 6338BCBD
+P 6650 3650
+F 0 "R16" V 6445 3650 50  0000 C CNN
+F 1 "10k" V 6536 3650 50  0000 C CNN
+F 2 "" H 6650 3650 50  0001 C CNN
+F 3 "~" H 6650 3650 50  0001 C CNN
+	1    6650 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 3650 6250 3650
+Connection ~ 6250 3650
+$Comp
+L Device:C_Small C12
+U 1 1 6338D92D
+P 7200 3650
+F 0 "C12" V 7108 3604 50  0000 R CNN
+F 1 "100n" V 7000 3700 50  0000 R CNN
+F 2 "" H 7200 3650 50  0001 C CNN
+F 3 "~" H 7200 3650 50  0001 C CNN
+	1    7200 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 3650 7100 3650
+Wire Wire Line
+	7300 3650 7450 3650
+$Comp
+L Device:R_Small_US R17
+U 1 1 6338F63D
+P 7450 3450
+F 0 "R17" H 7382 3404 50  0000 R CNN
+F 1 "10k" H 7382 3495 50  0000 R CNN
+F 2 "" H 7450 3450 50  0001 C CNN
+F 3 "~" H 7450 3450 50  0001 C CNN
+	1    7450 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7450 3250 7450 3350
+Wire Wire Line
+	7450 3650 7450 3750
+Wire Wire Line
+	7450 3550 7450 3650
+Connection ~ 7450 3650
+$Comp
+L Device:R_Small_US R18
+U 1 1 63392194
+P 7450 3850
+F 0 "R18" H 7382 3804 50  0000 R CNN
+F 1 "10k" H 7382 3895 50  0000 R CNN
+F 2 "" H 7450 3850 50  0001 C CNN
+F 3 "~" H 7450 3850 50  0001 C CNN
+	1    7450 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR031
+U 1 1 633929D4
+P 7450 4250
+F 0 "#PWR031" H 7450 4000 50  0001 C CNN
+F 1 "GND" H 7455 4077 50  0000 C CNN
+F 2 "" H 7450 4250 50  0001 C CNN
+F 3 "" H 7450 4250 50  0001 C CNN
+	1    7450 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3950 7450 4250
+$Comp
+L Diode:1N5819 D5
+U 1 1 6339677D
+P 8250 3850
+F 0 "D5" V 8296 3771 50  0000 R CNN
+F 1 "1N5819" V 8205 3771 50  0000 R CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8250 3675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 8250 3850 50  0001 C CNN
+	1    8250 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 3650 8250 3650
+Wire Wire Line
+	8250 3650 8250 3700
+Wire Wire Line
+	8250 4000 8250 4150
+Text GLabel 8250 4150 3    50   Input ~ 0
+3.3V
+$Comp
+L Diode:1N5819 D6
+U 1 1 63399FC8
+P 8750 3850
+F 0 "D6" V 8700 4050 50  0000 R CNN
+F 1 "1N5819" V 8800 4200 50  0000 R CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8750 3675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 8750 3850 50  0001 C CNN
+	1    8750 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8750 3700 8750 3650
+Wire Wire Line
+	8750 3650 8250 3650
+Connection ~ 8250 3650
+Wire Wire Line
+	8750 4000 8750 4250
+$Comp
+L power:GND #PWR032
+U 1 1 6339C287
+P 8750 4250
+F 0 "#PWR032" H 8750 4000 50  0001 C CNN
+F 1 "GND" H 8755 4077 50  0000 C CNN
+F 2 "" H 8750 4250 50  0001 C CNN
+F 3 "" H 8750 4250 50  0001 C CNN
+	1    8750 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3650 9000 3650
+Connection ~ 8750 3650
+Text GLabel 9000 3650 2    50   Output ~ 0
+sigOut
+Wire Wire Line
+	5500 3650 6250 3650
+$Comp
+L Amplifier_Operational:MC33079 U1
+U 3 1 6338D804
+P 5200 3650
+F 0 "U1" H 5200 4017 50  0000 C CNN
+F 1 "MC33079" H 5200 3926 50  0000 C CNN
+F 2 "" H 5150 3750 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MC33078-D.PDF" H 5250 3850 50  0001 C CNN
+	3    5200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 633A2AAC
+P 1900 4150
+F 0 "#PWR026" H 1900 3900 50  0001 C CNN
+F 1 "GND" H 1905 3977 50  0000 C CNN
+F 2 "" H 1900 4150 50  0001 C CNN
+F 3 "" H 1900 4150 50  0001 C CNN
+	1    1900 4150
+	1    0    0    -1  
+$EndComp
+Text Notes 2800 4200 0    50   ~ 0
+gain only 391 \nGBWP=16Mhz
+NoConn ~ 3200 5150
+$EndSCHEMATC
