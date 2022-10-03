@@ -683,6 +683,7 @@
     )
   )
 
+
   (junction (at 223.52 74.93) (diameter 0) (color 0 0 0 0)
     (uuid 01b0b0c5-c976-4824-806e-211ec0a3fd5a)
   )
@@ -1050,7 +1051,7 @@
     (property "Reference" "R4" (id 0) (at 160.4772 86.4616 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "4.7k" (id 1) (at 160.4772 88.773 0)
+    (property "Value" "5.8k" (id 1) (at 160.4772 88.773 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 158.75 87.63 0)

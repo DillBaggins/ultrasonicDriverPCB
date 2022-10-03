@@ -574,6 +574,7 @@
     )
   )
 
+
   (junction (at 128.27 101.6) (diameter 0) (color 0 0 0 0)
     (uuid 036f5d7b-41be-4eac-b278-63e4720dcfd0)
   )
@@ -1809,7 +1810,7 @@
       (reference "R3") (unit 1) (value "100k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006310453c/00000000-0000-0000-0000-000063119e7e"
-      (reference "R4") (unit 1) (value "4.7k") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R4") (unit 1) (value "5.8k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006310453c/00000000-0000-0000-0000-000063119e84"
       (reference "R5") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
@@ -1842,7 +1843,7 @@
       (reference "R14") (unit 1) (value "330") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-000063143e55/00000000-0000-0000-0000-00006338ed55"
-      (reference "R15") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R15") (unit 1) (value "100") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-000063143e55/00000000-0000-0000-0000-00006338bcbd"
       (reference "R16") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")

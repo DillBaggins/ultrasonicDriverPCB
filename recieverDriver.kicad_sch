@@ -522,6 +522,7 @@
     )
   )
 
+
   (junction (at 99.06 90.17) (diameter 0) (color 0 0 0 0)
     (uuid 0e2909a7-e841-4d59-9a1a-e49fbf81f75c)
   )
@@ -1224,7 +1225,7 @@
     (property "Reference" "R15" (id 0) (at 126.1872 104.2416 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10k" (id 1) (at 126.1872 106.553 0)
+    (property "Value" "100" (id 1) (at 126.1872 106.553 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 124.46 105.41 0)
