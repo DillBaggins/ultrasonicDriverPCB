@@ -293,29 +293,29 @@
         )
       )
     )
-    (symbol "Diode:1N4001" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
+    (symbol "Diode:1N4148W" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
       (property "Reference" "D" (id 0) (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "1N4001" (id 1) (at 0 -2.54 0)
+      (property "Value" "1N4148W" (id 1) (at 0 -2.54 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" (id 2) (at 0 0 0)
+      (property "Footprint" "Diode_SMD:D_SOD-123" (id 2) (at 0 -4.445 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf" (id 3) (at 0 0 0)
+      (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_keywords" "diode" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "50V 1A General Purpose Rectifier Diode, DO-41" (id 5) (at 0 0 0)
+      (property "ki_description" "75V 0.15A Fast Switching Diode, SOD-123" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "D*DO?41*" (id 6) (at 0 0 0)
+      (property "ki_fp_filters" "D*SOD?123*" (id 6) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "1N4001_0_1"
+      (symbol "1N4148W_0_1"
         (polyline
           (pts
             (xy -1.27 1.27)
@@ -343,7 +343,7 @@
           (fill (type none))
         )
       )
-      (symbol "1N4001_1_1"
+      (symbol "1N4148W_1_1"
         (pin passive line (at -3.81 0 0) (length 2.54)
           (name "K" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -573,7 +573,6 @@
       )
     )
   )
-
 
   (junction (at 128.27 101.6) (diameter 0) (color 0 0 0 0)
     (uuid 036f5d7b-41be-4eac-b278-63e4720dcfd0)
@@ -1096,7 +1095,7 @@
     (property "Value" "0.33u" (id 1) (at 111.5568 44.323 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 109.22 43.18 0)
+    (property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" (id 2) (at 109.22 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 109.22 43.18 0)
@@ -1115,7 +1114,7 @@
     (property "Value" "2.2u" (id 1) (at 111.5568 57.023 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 109.22 55.88 0)
+    (property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" (id 2) (at 109.22 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 109.22 55.88 0)
@@ -1152,7 +1151,7 @@
     (property "Value" "0.1u" (id 1) (at 142.0368 44.323 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 139.7 43.18 0)
+    (property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" (id 2) (at 139.7 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 139.7 43.18 0)
@@ -1171,7 +1170,7 @@
     (property "Value" "1u" (id 1) (at 142.0368 57.023 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 139.7 55.88 0)
+    (property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" (id 2) (at 139.7 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 139.7 55.88 0)
@@ -1179,44 +1178,6 @@
     )
     (pin "1" (uuid 0f12fac0-321f-4ed2-acf0-846b55228173))
     (pin "2" (uuid 0d7402b0-7e6b-4f19-b96a-07a197c0c82e))
-  )
-
-  (symbol (lib_id "Diode:1N4001") (at 151.13 43.18 270) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-000063339f89)
-    (property "Reference" "D1" (id 0) (at 153.1366 42.0116 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "1N4001" (id 1) (at 153.1366 44.323 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" (id 2) (at 146.685 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf" (id 3) (at 151.13 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 11086354-9ccd-4c5c-9603-9259d8ea8ab3))
-    (pin "2" (uuid 18e49b2f-6bab-4c23-b1af-5e4fd419dc2f))
-  )
-
-  (symbol (lib_id "Diode:1N4001") (at 151.13 55.88 270) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-00006333baf3)
-    (property "Reference" "D2" (id 0) (at 153.1366 54.7116 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "1N4001" (id 1) (at 153.1366 57.023 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" (id 2) (at 146.685 55.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf" (id 3) (at 151.13 55.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8b92e330-d04e-4566-a0cb-abd5d9ecb3a8))
-    (pin "2" (uuid 212738b0-9530-413f-beae-5db32c76cc91))
   )
 
   (symbol (lib_id "power:GND") (at 161.29 53.34 0) (unit 1)
@@ -1589,6 +1550,44 @@
     (pin "2" (uuid bede52cc-0791-4cf6-9edc-dec33ae7a591))
   )
 
+  (symbol (lib_id "Diode:1N4148W") (at 151.13 43.18 270) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 705400fa-62b9-42be-acd7-36640e652531)
+    (property "Reference" "D1" (id 0) (at 153.162 42.3453 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "1N4148W" (id 1) (at 153.162 44.8822 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (id 2) (at 146.685 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (id 3) (at 151.13 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a142b3f8-5fb8-467c-926a-b7f525ac7b13))
+    (pin "2" (uuid 31c178bc-30c4-4f0f-b5bf-3e5be7c6c111))
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 151.13 55.88 270) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 99aa5e43-e983-4d95-b358-514ef420a0fa)
+    (property "Reference" "D2" (id 0) (at 153.162 55.0453 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "1N4148W" (id 1) (at 153.162 57.5822 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (id 2) (at 146.685 55.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (id 3) (at 151.13 55.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7754a991-2c34-4528-958a-1a014d7c8ec6))
+    (pin "2" (uuid 4feda05c-3168-4ce5-943b-5eecc415ec46))
+  )
+
   (sheet (at 34.29 129.54) (size 33.02 24.13) (fields_autoplaced)
     (stroke (width 0) (type solid) (color 0 0 0 0))
     (fill (color 0 0 0 0.0000))
@@ -1729,10 +1728,10 @@
       (reference "C4") (unit 1) (value "10n") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-0000633337cc"
-      (reference "C5") (unit 1) (value "0.33u") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C5") (unit 1) (value "0.33u") (footprint "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A")
     )
     (path "/00000000-0000-0000-0000-000063334f88"
-      (reference "C6") (unit 1) (value "2.2u") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C6") (unit 1) (value "2.2u") (footprint "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A")
     )
     (path "/00000000-0000-0000-0000-00006337fda0"
       (reference "C7") (unit 1) (value "10n") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -1747,10 +1746,10 @@
       (reference "C10") (unit 1) (value "10n") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-000063338a2a"
-      (reference "C11") (unit 1) (value "0.1u") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C11") (unit 1) (value "0.1u") (footprint "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A")
     )
     (path "/00000000-0000-0000-0000-00006333930a"
-      (reference "C12") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C12") (unit 1) (value "1u") (footprint "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A")
     )
     (path "/00000000-0000-0000-0000-00006310453c/00000000-0000-0000-0000-000063113f14"
       (reference "C13") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -1764,23 +1763,23 @@
     (path "/00000000-0000-0000-0000-000063143e55/00000000-0000-0000-0000-00006338d92d"
       (reference "C16") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
-    (path "/00000000-0000-0000-0000-000063339f89"
-      (reference "D1") (unit 1) (value "1N4001") (footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal")
+    (path "/705400fa-62b9-42be-acd7-36640e652531"
+      (reference "D1") (unit 1) (value "1N4148W") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006333baf3"
-      (reference "D2") (unit 1) (value "1N4001") (footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal")
+    (path "/99aa5e43-e983-4d95-b358-514ef420a0fa"
+      (reference "D2") (unit 1) (value "1N4148W") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006310453c/00000000-0000-0000-0000-00006311b215"
-      (reference "D3") (unit 1) (value "1N914") (footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+    (path "/00000000-0000-0000-0000-00006310453c/2885c455-af22-48fb-b03e-5779fc306315"
+      (reference "D3") (unit 1) (value "1N4148W") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-00006310453c/00000000-0000-0000-0000-00006311d65a"
-      (reference "D4") (unit 1) (value "1N914") (footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+    (path "/00000000-0000-0000-0000-00006310453c/8d057da6-c621-49d8-8c9c-1a79a55a84a2"
+      (reference "D4") (unit 1) (value "1N4148W") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/00000000-0000-0000-0000-000063143e55/00000000-0000-0000-0000-00006339677d"
-      (reference "D5") (unit 1) (value "1N5819") (footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal")
+    (path "/00000000-0000-0000-0000-000063143e55/9ae8eb7e-9653-49f7-b132-205d6381d0c1"
+      (reference "D5") (unit 1) (value "B5819W.SL") (footprint "SamacSys_Parts:B5819WSL")
     )
-    (path "/00000000-0000-0000-0000-000063143e55/00000000-0000-0000-0000-000063399fc8"
-      (reference "D6") (unit 1) (value "1N5819") (footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal")
+    (path "/00000000-0000-0000-0000-000063143e55/858c5b99-a8d5-44e4-8242-15bcd1a0ce5f"
+      (reference "D6") (unit 1) (value "B5819W.SL") (footprint "SamacSys_Parts:B5819WSL")
     )
     (path "/00000000-0000-0000-0000-0000630cd5ba"
       (reference "J1") (unit 1) (value "Conn_01x05_Female") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical")
@@ -1794,11 +1793,11 @@
     (path "/00000000-0000-0000-0000-000063143e55/1c290918-06b0-43d8-833d-e1a281661805"
       (reference "LS2") (unit 1) (value "400ST16M") (footprint "SamacSys_Parts:400ST16M")
     )
-    (path "/00000000-0000-0000-0000-00006310453c/00000000-0000-0000-0000-00006310a68f"
-      (reference "Q1") (unit 1) (value "S8050") (footprint "Package_TO_SOT_THT:TO-92_Inline")
+    (path "/00000000-0000-0000-0000-00006310453c/6771dd30-6316-4928-ae16-a4fab88a526b"
+      (reference "Q1") (unit 1) (value "SS8050-G") (footprint "SamacSys_Parts:SOT95P240X115-3N")
     )
-    (path "/00000000-0000-0000-0000-00006310453c/00000000-0000-0000-0000-00006310a695"
-      (reference "Q2") (unit 1) (value "S8550") (footprint "Package_TO_SOT_THT:TO-92_Inline")
+    (path "/00000000-0000-0000-0000-00006310453c/eaef602c-0099-4f05-b952-25b2bc19c63f"
+      (reference "Q2") (unit 1) (value "S8550") (footprint "SamacSys_Parts:SOT95P240X115-3N")
     )
     (path "/00000000-0000-0000-0000-00006310453c/00000000-0000-0000-0000-0000631109af"
       (reference "R1") (unit 1) (value "33k") (footprint "Resistor_SMD:R_0603_1608Metric")
@@ -1810,7 +1809,7 @@
       (reference "R3") (unit 1) (value "100k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006310453c/00000000-0000-0000-0000-000063119e7e"
-      (reference "R4") (unit 1) (value "5.8k") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R4") (unit 1) (value "6.8k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006310453c/00000000-0000-0000-0000-000063119e84"
       (reference "R5") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
