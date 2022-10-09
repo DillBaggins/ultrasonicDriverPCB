@@ -1857,12 +1857,6 @@
       (reference "U1") (unit 1) (value "MC33079") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006310453c/00000000-0000-0000-0000-00006310a67c"
-      (reference "U1") (unit 2) (value "MC33079") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
-    )
-    (path "/00000000-0000-0000-0000-000063143e55/00000000-0000-0000-0000-00006338d804"
-      (reference "U1") (unit 3) (value "MC33079") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
-    )
-    (path "/00000000-0000-0000-0000-000063143e55/00000000-0000-0000-0000-00006314489d"
       (reference "U1") (unit 4) (value "MC33079") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006335288e"
@@ -1876,6 +1870,12 @@
     )
     (path "/00000000-0000-0000-0000-000063143e55/00000000-0000-0000-0000-00006337e426"
       (reference "U4") (unit 1) (value "MC33079") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000063143e55/00000000-0000-0000-0000-00006314489d"
+      (reference "U4") (unit 2) (value "MC33079") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000063143e55/00000000-0000-0000-0000-00006338d804"
+      (reference "U4") (unit 3) (value "MC33079") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006337fd72"
       (reference "U4") (unit 5) (value "MC33079") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")

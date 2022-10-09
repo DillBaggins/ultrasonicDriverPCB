@@ -967,7 +967,7 @@
     (pin "4" (uuid 4f86dd1c-f25f-4911-9942-270f9060f898))
   )
 
-  (symbol (lib_id "Amplifier_Operational:MC33079") (at 151.13 74.93 0) (unit 2)
+  (symbol (lib_id "Amplifier_Operational:MC33079") (at 151.13 74.93 0) (unit 4)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006310a67c)
     (property "Reference" "U1" (id 0) (at 151.13 65.6082 0))
